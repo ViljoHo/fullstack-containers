@@ -1,0 +1,62 @@
+docker start -i loving_bardeen 
+root@996d9e94d827:/# apt-get update
+root@996d9e94d827:/# apt-get -y install curl
+
+.
+.
+.
+
+root@996d9e94d827:/# curl -sL https://deb.nodesource.com/setup_20.x | bash
+apt install -y nodejs
+
+.
+.
+.
+
+Please select the geographic area in which you live. Subsequent configuration
+questions will narrow this down by presenting a list of cities, representing
+the time zones in which they are located.
+
+  1. Africa      4. Arctic    7. Australia  10. Pacific
+  2. America     5. Asia      8. Europe     11. Etc
+  3. Antarctica  6. Atlantic  9. Indian     12. Legacy
+Geographic area: 8
+
+Please select the city or region corresponding to your time zone.
+
+  1. Amsterdam   14. Copenhagen   27. London      40. Riga        53. Ulyanovsk
+  2. Andorra     15. Dublin       28. Luxembourg  41. Rome        54. Vaduz
+  3. Astrakhan   16. Gibraltar    29. Madrid      42. Samara      55. Vatican
+  4. Athens      17. Guernsey     30. Malta       43. San_Marino  56. Vienna
+  5. Belfast     18. Helsinki     31. Mariehamn   44. Sarajevo    57. Vilnius
+  6. Belgrade    19. Isle_of_Man  32. Minsk       45. Saratov     58. Volgograd
+  7. Berlin      20. Istanbul     33. Monaco      46. Simferopol  59. Warsaw
+  8. Bratislava  21. Jersey       34. Moscow      47. Skopje      60. Zagreb
+  9. Brussels    22. Kaliningrad  35. Nicosia     48. Sofia       61. Zurich
+  10. Bucharest  23. Kirov        36. Oslo        49. Stockholm
+  11. Budapest   24. Kyiv         37. Paris       50. Tallinn
+  12. Busingen   25. Lisbon       38. Podgorica   51. Tirane
+  13. Chisinau   26. Ljubljana    39. Prague      52. Tiraspol
+Time zone: 18
+
+
+Current default time zone: 'Europe/Helsinki'
+Local time is now:      Mon Dec 22 22:48:01 EET 2025.
+Universal Time is now:  Mon Dec 22 20:48:01 UTC 2025.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up netbase (6.4) ...
+Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.9) ...
+Setting up python3.12 (3.12.3-1ubuntu0.9) ...
+Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+Setting up python3 (3.12.3-0ubuntu2.1) ...
+running python rtupdate hooks for python3.12...
+running python post-rtupdate hooks for python3.12...
+Setting up nodejs (20.19.6-1nodesource1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+
+
+root@996d9e94d827:/# node /usr/src/app/index.js 
+Hello World
+root@996d9e94d827:/# exit
+exit

@@ -1,0 +1,4 @@
+docker start -i loving_bardeen
+root@996d9e94d827:/# nano /usr/src/app/index.js 
+root@996d9e94d827:/# exit
+
